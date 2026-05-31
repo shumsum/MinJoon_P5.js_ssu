@@ -228,7 +228,7 @@
         VISUAL PORTFOLIO · P5.JS · 20261051
     </div>
 
-    <h1>
+    <h1 id="hero-title">
         VISUAL<br>
         PORTFOLIO<br>
         P5.JS
@@ -338,6 +338,25 @@
 </div>
 
 </section>
+
+<script>
+const title = document.getElementById("hero-title");
+
+document.addEventListener("mousemove", (e) => {
+
+    const x =
+        (e.clientX - window.innerWidth / 2) * 0.015;
+
+    const y =
+        (e.clientY - window.innerHeight / 2) * 0.015;
+
+    title.style.transform =
+        `translate(${x}px, ${y}px)`;
+});
+</script>
+
+
+    
 
 </body>
 </html>
