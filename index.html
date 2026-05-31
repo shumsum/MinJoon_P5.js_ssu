@@ -34,7 +34,25 @@
     line-height: 0.9;
     margin: 0;
     font-weight: 900;
+                {
+    animation: glow 3s infinite alternate;
+}
 
+@keyframes glow {
+
+    from {
+        text-shadow:
+            0 0 10px white,
+            0 0 20px white;
+    }
+
+    to {
+        text-shadow:
+            0 0 20px #4f8cff,
+            0 0 40px #4f8cff,
+            0 0 60px #4f8cff;
+    }
+}
     
 }
         #hero-title {
