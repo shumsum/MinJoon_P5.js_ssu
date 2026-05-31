@@ -34,6 +34,22 @@
     line-height: 0.9;
     margin: 0;
     font-weight: 900;
+
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
 
         .hero p {
