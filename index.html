@@ -11,11 +11,127 @@
         }
 
         body {
-            margin: 0;
-            padding: 30px;
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-        }
+    margin: 0;
+    padding: 0;
+    background: #050505;
+    color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+        .hero {
+    padding: 40px;
+}
+
+        .hero-top {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+        .hero h1 {
+    font-size: 7rem;
+    line-height: 0.9;
+    margin: 0;
+    font-weight: 900;
+}
+
+        .hero p {
+    margin-top: 30px;
+    color: #aaa;
+    line-height: 1.6;
+}
+
+        .tags {
+    margin-top: 20px;
+}
+
+        .tags span {
+    border: 1px solid #555;
+    padding: 5px 10px;
+    font-size: 10px;
+    margin-right: 8px;
+    letter-spacing: 1px;
+}
+
+        #projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    padding: 40px;
+}
+
+        .project {
+    border: 1px solid #222;
+    background: #0a0a0a;
+    transition: all 0.3s ease;
+}
+
+        .project:hover {
+    transform: scale(1.01);
+    border-color: #555;
+}
+
+        .project a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+}
+
+        .project-header {
+    padding: 15px 20px;
+}
+
+        .assignment {
+    font-size: 10px;
+    color: #888;
+    letter-spacing: 2px;
+}
+
+        .project-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+        .project-desc {
+    font-size: 0.8rem;
+    color: #777;
+    margin-top: 10px;
+}
+
+        .project img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+        .badge {
+    float: right;
+    border: 1px solid #666;
+    padding: 4px 8px;
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+        .static {
+    color: #d9c3a3;
+}
+
+        .dynamic {
+    color: #7da7ff;
+}
+
+        @media (max-width: 900px) {
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+            #projects {
+        grid-template-columns: 1fr;
+    }
+}
 
         header {
             text-align: center;
@@ -87,60 +203,112 @@
 
 <body>
 
-<header>
-    <h1>p5.js 작품 포트폴리오</h1>
-    <p>정적인 작품에서 동적인 작품으로 발전하는 과정을 담았습니다.</p>
+<header class="hero">
+    <div class="hero-top">
+        CREATIVE CODING · P5.JS · 2025-2026
+    </div>
+
+    <h1>
+        CREATIVE<br>
+        CODING<br>
+        PORTFOLIO
+    </h1>
+
+    <p>
+        Static to Dynamic<br>
+        p5.js를 활용한 시각적 표현과 인터랙션 탐구
+    </p>
+
+    <div class="tags">
+        <span>P5.JS</span>
+        <span>4 WORKS</span>
+        <span>2 STATIC</span>
+        <span>2 DYNAMIC</span>
+    </div>
 </header>
 
 <section id="projects">
-
+    
     <!-- Abstract -->
     <div class="project">
-        <a href="https://shumsum.github.io/MinJoon_P5.js_ssu/project1_Abstract/">
-            <img src="./abstract.png" alt="Abstract">
+    <a href="/MinJoon_P5.js_ssu/project1_Abstract/">
 
-            <div class="info">
-                <h2>Abstract</h2>
-                <p>정적인 추상화 작품</p>
+        <div class="project-header">
+            <span class="assignment">ASSIGNMENT 01</span>
+            <span class="badge static">STATIC</span>
+
+            <div class="project-title">
+                ABSTRACT
             </div>
-        </a>
-    </div>
 
-    <!-- Moving Abstract -->
-    <div class="project">
-        <a href="https://shumsum.github.io/MinJoon_P5.js_ssu/project4_moving_Abstract/">
-            <img src="./moving_abstract.gif" alt="Moving Abstract">
-
-            <div class="info">
-                <h2>Moving Abstract</h2>
-                <p>움직임이 추가된 추상화 작품</p>
+            <div class="project-desc">
+                정적인 추상화 작품
             </div>
-        </a>
-    </div>
+        </div>
 
-    <!-- My Face -->
-    <div class="project">
-        <a href="https://shumsum.github.io/MinJoon_P5.js_ssu/project2_myface/">
-            <img src="./myface.png" alt="My Face">
+        <img src="./preview/abstract.png">
+    </a>
+</div>
 
-            <div class="info">
-                <h2>My Face</h2>
-                <p>정적인 자화상 작품</p>
+<div class="project">
+    <a href="/MinJoon_P5.js_ssu/project4_moving_Abstract/">
+
+        <div class="project-header">
+            <span class="assignment">ASSIGNMENT 04</span>
+            <span class="badge dynamic">DYNAMIC</span>
+
+            <div class="project-title">
+                MOVING ABSTRACT
             </div>
-        </a>
-    </div>
 
-    <!-- Moving My Face -->
-    <div class="project">
-        <a href="https://shumsum.github.io/MinJoon_P5.js_ssu/project3_moving_myface/">
-            <img src="./moving_myface.gif" alt="Moving My Face">
-
-            <div class="info">
-                <h2>Moving My Face</h2>
-                <p>움직임이 추가된 자화상 작품</p>
+            <div class="project-desc">
+                움직임이 추가된 추상화 작품
             </div>
-        </a>
-    </div>
+        </div>
+
+        <img src="./preview/moving_abstract.gif">
+    </a>
+</div>
+
+<div class="project">
+    <a href="/MinJoon_P5.js_ssu/project2_myface/">
+
+        <div class="project-header">
+            <span class="assignment">ASSIGNMENT 02</span>
+            <span class="badge static">STATIC</span>
+
+            <div class="project-title">
+                MY FACE
+            </div>
+
+            <div class="project-desc">
+                정적인 자화상 작품
+            </div>
+        </div>
+
+        <img src="./preview/myface.png">
+    </a>
+</div>
+
+<div class="project">
+    <a href="/MinJoon_P5.js_ssu/project3_moving_myface/">
+
+        <div class="project-header">
+            <span class="assignment">ASSIGNMENT 03</span>
+            <span class="badge dynamic">DYNAMIC</span>
+
+            <div class="project-title">
+                MOVING MY FACE
+            </div>
+
+            <div class="project-desc">
+                인터랙션이 추가된 자화상 작품
+            </div>
+        </div>
+
+        <img src="./preview/moving_myface.gif">
+    </a>
+</div>
 
 </section>
 
