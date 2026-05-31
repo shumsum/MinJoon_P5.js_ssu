@@ -197,4 +197,4 @@ function keyPressed() {
   if (keyCode === LEFT_ARROW || keyCode === RIGHT_ARROW) {
     isShaking = true; 
     shakeTimer = 0; 
-  saveGif('20261051', 6)} }//shake   
+  } }//shake   
